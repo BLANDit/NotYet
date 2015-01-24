@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 5b38b62f76473457484440471a4e1b0b
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - scriptName: {fileID: 197194, guid: 17beae025a27f4a46beb04e8add1e0de, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
