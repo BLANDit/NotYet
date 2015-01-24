@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
 function Start () {
-
+	transform.Rotate(Vector3.up*45);
 }
 
 function Update () {

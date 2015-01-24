@@ -25,34 +25,41 @@ function timedPlay(clipIndex : int)
 
 function OnTriggerExit(collider : Collider)
 {
-	if(collider.tag == "Player" || collider.tag == "PushBlock")
+	if(collider.tag == "PushBlock")
 	{
 		if(name == "BlockAPad(Clone)")
 		{
+			renderer.material.color = Color.white;
 			transform.parent.GetComponent(PadBarScript).moveOut(0);
 		}
 		else if(name == "BlockBPad(Clone)")
 		{
+			renderer.material.color = Color.white;
 			transform.parent.GetComponent(PadBarScript).moveOut(1);
 		}
 		else if(name == "BlockCPad(Clone)")
 		{
+			renderer.material.color = Color.white;
 			transform.parent.GetComponent(PadBarScript).moveOut(2);
 		}
 		else if(name == "BlockDPad(Clone)")
 		{
+			renderer.material.color = Color.white;
 			transform.parent.GetComponent(PadBarScript).moveOut(3);
 		}
 		else if(name == "BlockEPad(Clone)")
 		{
+			renderer.material.color = Color.white;
 			transform.parent.GetComponent(PadBarScript).moveOut(4);
 		}
 		else if(name == "BlockFPad(Clone)")
 		{
+			renderer.material.color = Color.white;
 			transform.parent.GetComponent(PadBarScript).moveOut(5);
 		}
 		else if(name == "BlockGPad(Clone)")
 		{
+			renderer.material.color = Color.white;
 			transform.parent.GetComponent(PadBarScript).moveOut(6);			
 		}
 	}
@@ -60,7 +67,7 @@ function OnTriggerExit(collider : Collider)
 
 function OnTriggerEnter(collider : Collider)
 {
-	if(collider.tag == "Player" || collider.tag == "PushBlock")
+	if(collider.tag == "PushBlock")
 	{
 		if(name == "BlockAPad(Clone)")
 		{

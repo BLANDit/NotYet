@@ -67,17 +67,15 @@ function checkVictoryCondition()
 
 function declareVictory()
 {
-	Debug.Log("Victory!");
-
 	audio.volume = 0.04;
 	audio.PlayOneShot(victorySound);
 	audio.volume = 1;
 	
 	alreadyWon = true;
 	
-//	for (var i = 0; i < padBars.Length; i++)
-//	{
-//		padBars[i].renderer.material.color = Color.blue;
-//	}
+	for (var i = 0; i < padBars.Length; i++)
+	{
+		padBars[i].GetComponent(PadBarScript).victorySequence();
+	}
 }
 

@@ -68,10 +68,7 @@ function moveOut(index : int)
 
 function Update () {
 
-	if(!alreadyWon && timeSincePlay > timeBetweenPlays-1)
-	{
-		transform.parent.GetComponent(PadPuzzleScript).checkVictoryCondition();
-	}
+	transform.parent.GetComponent(PadPuzzleScript).checkVictoryCondition();
 	
 	if(timeSincePlay >= timeBetweenPlays)
 	{
@@ -83,16 +80,25 @@ function Update () {
 				break;
 			}
 		}
-		renderer.material.color = Color.white;
+		if(!alreadyWon)
+		{
+			renderer.material.color = Color.white;
+		}
 		
 		timeSincePlay = 0;
 	}
 	else
 	{
-		if(timeSincePlay > .2)
+		if(timeSincePlay > .2 && !alreadyWon)
 		{
 			renderer.material.color = Color.black;
 		}
 		timeSincePlay += Time.deltaTime;
 	}
+}
+
+function victorySequence()
+{
+	alreadyWon = true;
+	renderer.material.color = Color(255/255.0F,185/255.0F,16/255.0F,255/255.0F);
 }

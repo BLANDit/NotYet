@@ -2,27 +2,10 @@
 
 function Start () {
 
-	renderer.material.color = Color.red;
 }
 
 function Update () {
 
-//	if(Input.GetKey("a"))
-//	{
-//		transform.position.x -= 0.1;
-//	}
-//	else if(Input.GetKey("d"))
-//	{
-//		transform.position.x += 0.1;
-//	}
-//	else if(Input.GetKey("w"))
-//	{
-//		transform.position.z += 0.1;
-//	}
-//	else if(Input.GetKey("s"))
-//	{
-//		transform.position.z -= 0.1;
-//	}
 }
 
 function FixedUpdate() {        

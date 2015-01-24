@@ -5,19 +5,19 @@ var maxForwardPos : float;
 var minForwardPos : float;
 
 function Start () {
-	maxForwardPos = transform.position.z + 15;
-	minForwardPos = transform.position.z;
+	maxForwardPos = transform.position.x + 15;
+	minForwardPos = transform.position.x;
 	transform.Rotate(Vector3.up*45);
 }
 
 function Update () {
-	if(transform.position.z > maxForwardPos)
+	if(transform.position.x > maxForwardPos)
 	{
-		transform.position.z = maxForwardPos;
+		transform.position.x = maxForwardPos;
 	}
-	else if(transform.position.z < minForwardPos)
+	else if(transform.position.x < minForwardPos)
 	{
-		transform.position.z = minForwardPos;
+		transform.position.x = minForwardPos;
 	}
 }
 
