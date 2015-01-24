@@ -45,7 +45,7 @@ function spawnBlock()
 	else
 	{
 		Debug.Log("No blocks left to spawn!");
-		for(var i: int = 0; i < 10; i++)
+		for(var i: int = 0; i < 5; i++)
 		{
 				Camera.main.orthographicSize -=1;
 				yield WaitForSeconds (0.001);
