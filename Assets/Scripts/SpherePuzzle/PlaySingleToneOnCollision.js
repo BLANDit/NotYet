@@ -19,6 +19,6 @@ function OnCollisionEnter(collision : Collision)
 	{
 		Debug.Log("Playing single tone.");
 		audio.PlayOneShot(this.tone);
-		GetComponentInParent(CircleOfBallsPuzzle).TonePlayed(tone);
+		transform.parent.GetComponent(CircleOfBallsPuzzle).TonePlayed(tone);
 	}
 }

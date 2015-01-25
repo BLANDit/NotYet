@@ -1,7 +1,6 @@
 ﻿#pragma strict
 
 function Start () {
-	Debug.Log("started");
 }
 
 function Update () {

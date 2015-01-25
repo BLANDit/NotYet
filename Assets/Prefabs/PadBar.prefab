@@ -65,7 +65,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81f99cfc2791f43b986439e307f210ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b4d09bcb7d6146b183e72e1ec158fe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BlockPadA: {fileID: 100000, guid: 758ac1d3b005d4ea78436df62739113b, type: 2}
@@ -92,7 +92,7 @@ MonoBehaviour:
   - {fileID: 0}
   timeBetweenPlays: 4
   timeSincePlay: 0
-  occupancyList: 00000000000000000000000000000000000000000000000000000000
+  occupancyList: 
   alreadyWon: 0
 --- !u!1001 &100100000
 Prefab:
