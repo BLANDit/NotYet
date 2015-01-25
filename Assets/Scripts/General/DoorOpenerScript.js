@@ -21,16 +21,13 @@ function Update ()
 
 function OnTriggerEnter(collider : Collider)
 {	
-	if(collider.tag == "Player")
+	if(doorUnlocked)
 	{
-		if(doorUnlocked)
-		{
-			//Take player to credits. 
-			 Application.LoadLevel ("Credits"); 
-		}
-		else
-		{
-			//Door is not unlocked, flash a color or something.
-		}
+		//Take player to credits. 
+		 Application.LoadLevel ("Credits"); 
+	}
+	else
+	{
+		//Door is not unlocked, flash a color or something.
 	}
 }
