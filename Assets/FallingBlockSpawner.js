@@ -30,7 +30,7 @@ function spawnBlock()
 		var lane = Random.Range(0,3);
 		if(lane==0)
 		{
-			Instantiate(fallingBlock, Vector3(-5, 2, 3.0), Quaternion.identity);
+			 Instantiate(fallingBlock, Vector3(-5, 2, 3.0), Quaternion.identity);
 
 		}
 		else if(lane==1)
