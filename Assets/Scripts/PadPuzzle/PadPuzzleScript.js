@@ -77,5 +77,7 @@ function declareVictory()
 	{
 		padBars[i].GetComponent(PadBarScript).victorySequence();
 	}
+	GameObject.FindGameObjectWithTag("door").GetComponent(DoorOpenerScript).padPuzzleFinished = true;
+
 }
 

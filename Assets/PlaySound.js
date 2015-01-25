@@ -20,10 +20,8 @@ function Update () {
 
 function PlaySound(id : int)
 {
-	Debug.Log("Need to play "+id);
 	if(id >=0 && id <= 7)
 	{
-		Debug.Log("Got command to play "+clipList[id]);
 		audio.PlayOneShot(clipList[id]);
 	}
 }

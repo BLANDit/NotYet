@@ -23,7 +23,6 @@ function Start ()
 
 function Update () 
 {
-	//Debug.Log(blocksRemaining);
 	if(currentBlock == null && isStarted)
 	{
 		spawnBlock();
@@ -58,7 +57,6 @@ function spawnBlock()
 	}
 	else
 	{
-		Debug.Log("No blocks left to spawn!");
 		for(var i: int = 0; i < 5; i++)
 		{
 				Camera.main.orthographicSize -=1;

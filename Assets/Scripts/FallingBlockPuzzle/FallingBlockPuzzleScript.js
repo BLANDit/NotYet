@@ -101,6 +101,8 @@ function declareVictory()
 {
 	isBeaten = true;
 	transform.Find("Plane").renderer.material.color = Color(255/255.0F,185/255.0F,16/255.0F,255/255.0F);
+	GameObject.FindGameObjectWithTag("door").GetComponent(DoorOpenerScript).fallingBlockPuzzleFinished = true;
+
 }
 
 function beginPuzzle()

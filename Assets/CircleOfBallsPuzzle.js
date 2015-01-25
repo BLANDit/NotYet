@@ -67,16 +67,17 @@ function TonePlayed(tonePlayed : AudioClip)
 				GameObject.Find(spotlightName).light.color = Color.red;	
 			} 
 		}
-		Debug.Log(currentToneSeries);
 		if(currentToneSeries.length >=goalToneSeries.length)
 		{
 			//All correct tones played
+			//Player wins this level
 			for(var j : int = 1; j < 8; j++)
 			{
 				spotlightName = "Spotlight"+j;
 				GameObject.Find(spotlightName).light.color = Color.yellow;
 			}
 			complete = true;
+			GameObject.FindGameObjectWithTag("door").GetComponent(DoorOpenerScript).spherePuzzleFinished = true;
 		}
 	}
 }
