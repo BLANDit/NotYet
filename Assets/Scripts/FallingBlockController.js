@@ -21,9 +21,9 @@ function OnCollisionEnter(collision : Collision)
 		renderer.material.color = Color.red;
 		var zValue : int = -7 +GameObject.Find("FallingBlockSpawner").GetComponent(FallingBlockSpawner).getCubesScored();
 		Debug.Log(zValue);
-		GetComponentInParent(Transform).transform.rigidbody.isKinematic=true;
-		GetComponentInParent(Transform).transform.position = Vector3(9,.5, zValue);
-		GetComponentInParent(Transform).transform.rotation = Quaternion.identity;
+		rigidbody.isKinematic=true;
+		transform.position = Vector3(9,.5, zValue);
+		transform.rotation = Quaternion.identity;
 		objectEnabled=false;
 		scriptName.GetComponent(FallingBlockSpawner).playNextNote();
 		yield WaitForSeconds (3);
@@ -38,7 +38,7 @@ function OnCollisionEnter(collision : Collision)
 		{
 			// Start Over Here
 			Debug.Log("Hit the backwall.");
-			GetComponentInParent(Transform).transform.position = Vector3(100,.3,-7.9);
+			transform.position = Vector3(100,.3,-7.9);
 	 		yield WaitForSeconds (3);
  			scriptName.GetComponent(FallingBlockSpawner).spawnBlock();
 			Destroy(this);
