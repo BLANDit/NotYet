@@ -13,6 +13,9 @@ static var notesToPlay : Array = new Array(0,6,4,2,0,4,2,0,6,5,4,3,2,1,0);
 
 var initialNumberOfNotes : int = notesToPlay.length; 
 
+var currentBlock : GameObject;
+var isStarted : boolean;
+
 function Start () 
 {
 
@@ -21,25 +24,36 @@ function Start ()
 function Update () 
 {
 	//Debug.Log(blocksRemaining);
+	if(currentBlock == null && isStarted)
+	{
+		spawnBlock();
+	}
 }
 
 function spawnBlock()
 {	
+	if(!isStarted)
+	{
+		isStarted = true;
+	}
+	
 	if(notesToPlay.length > 0)
 	{
 		var lane = Random.Range(0,3);
+		var yVal : int = transform.position.y + 2;
+		var zVal : int = transform.position.z + 3;
 		if(lane==0)
 		{
-			 Instantiate(fallingBlock, Vector3(-5, 2, 3.0), Quaternion.identity);
+			currentBlock = Instantiate(fallingBlock, Vector3(transform.parent.transform.position.x-5, yVal, zVal), Quaternion.identity);
 
 		}
 		else if(lane==1)
 		{
-			Instantiate(fallingBlock, Vector3(0, 2, 3.0), Quaternion.identity);	
+			currentBlock = Instantiate(fallingBlock, Vector3(transform.parent.transform.position.x+0, yVal, zVal), Quaternion.identity);	
 		}
 		else
 		{
-			Instantiate(fallingBlock, Vector3(5, 2, 3.0), Quaternion.identity);
+			currentBlock = Instantiate(fallingBlock, Vector3(transform.parent.transform.position.x+5, yVal, zVal), Quaternion.identity);
 		}
 	}
 	else
@@ -55,14 +69,9 @@ function spawnBlock()
 
 function playNextNote()
 {
-	lastNote = notesToPlay.pop();
-	Debug.Log(lastNote);
-	GameObject.Find("AudioManager").GetComponent(PlaySound).PlaySound(lastNote);
-}
-
-function replaceLastNote()
-{
-	notesToPlay.push(lastNote);
+	//lastNote = notesToPlay.pop();
+	//Debug.Log(lastNote);
+	//GameObject.Find("AudioManager").GetComponent(PlaySound).PlaySound(lastNote);
 }
 
 function getCubesScored()
