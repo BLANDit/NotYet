@@ -76,11 +76,6 @@ function TonePlayed(tonePlayed : AudioClip)
 				spotlightName = "Spotlight"+j;
 				GameObject.Find(spotlightName).light.color = Color.yellow;
 			}
-			//var pitchballs = GameObject.FindGameObjectsWithTag("PitchBall");
-			for(var ball : GameObject in pitchballs)
-			{
-				// Rotate balls, success!
-			}
 			complete = true;
 		}
 	}
