@@ -1541,6 +1541,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11499970, guid: 07a8a2c88e2ae4f41a6c722a021311bb, type: 2}
+      propertyPath: tone
+      value: 
+      objectReference: {fileID: 8300000, guid: c8559d60c5911474f9fec9ebaa7bed58, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07a8a2c88e2ae4f41a6c722a021311bb, type: 2}
   m_RootGameObject: {fileID: 1670795017}
@@ -4554,9 +4558,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaf67c4569e694bb7965442a564f5b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beat: {fileID: 8300000, guid: 85a6afba87a194b21822268b27ad8b7e, type: 3}
-  timeSinceBeat: 0
-  timeBetweenBeats: 16
 --- !u!23 &2015477520
 Renderer:
   m_ObjectHideFlags: 0
@@ -4767,7 +4768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f43a942633f4c919852642f1bc9f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tone: {fileID: 8300000, guid: af24bcfdecad54df7a97a10782c46267, type: 3}
+  tone: {fileID: 8300000, guid: c8559d60c5911474f9fec9ebaa7bed58, type: 3}
 --- !u!82 &2084897993
 AudioSource:
   m_ObjectHideFlags: 0
