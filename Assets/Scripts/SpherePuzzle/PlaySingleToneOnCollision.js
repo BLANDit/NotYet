@@ -18,6 +18,6 @@ function OnCollisionEnter(collision : Collision)
 	if(collision.collider.name != "Plane")
 	{
 		audio.PlayOneShot(this.tone);
-		GetComponentInParent(CircleOfBallsPuzzle).TonePlayed(tone);
+		transform.parent.GetComponent(CircleOfBallsPuzzle).TonePlayed(tone);
 	}
 }

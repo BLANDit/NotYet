@@ -153,16 +153,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c57f40c6fdfd24741a13c27d01a33ed6, type: 3}
+  m_Script: {fileID: 11500000, guid: aed3523f7e5ce4f899027d60fa2ff89a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  APad: {fileID: 8300000, guid: af24bcfdecad54df7a97a10782c46267, type: 3}
-  BPad: {fileID: 8300000, guid: 4165b0730478b463c85528df93346425, type: 3}
-  CPad: {fileID: 8300000, guid: 3e62930b432f74d35ba3e6ee247c55fc, type: 3}
-  DPad: {fileID: 8300000, guid: 26b8eeb0844a24ceb8d11ca220b45f9a, type: 3}
-  EPad: {fileID: 8300000, guid: 753976f116e434e8e80b3b4a3360481d, type: 3}
-  FPad: {fileID: 8300000, guid: c8559d60c5911474f9fec9ebaa7bed58, type: 3}
-  GPad: {fileID: 8300000, guid: 4e472bf882dec439d8a02d722345c0f5, type: 3}
+  APad: {fileID: 0}
+  BPad: {fileID: 0}
+  CPad: {fileID: 0}
+  DPad: {fileID: 0}
+  EPad: {fileID: 0}
+  FPad: {fileID: 0}
+  GPad: {fileID: 0}
   clipList:
   - {fileID: 0}
   - {fileID: 0}
