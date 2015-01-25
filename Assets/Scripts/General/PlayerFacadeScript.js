@@ -7,5 +7,6 @@ function Start () {
 
 function Update () {
 
+	
 	transform.LookAt(transform.parent.rigidbody.velocity + transform.position);
 }
