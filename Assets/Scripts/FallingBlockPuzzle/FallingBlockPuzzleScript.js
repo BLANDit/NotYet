@@ -86,15 +86,28 @@ function fireNext()
 function refillArray()
 {
 	
-	locationArray = [spawnLocation0, spawnLocation1, spawnLocation2,
-	 spawnLocation3, spawnLocation4, spawnLocation5, spawnLocation6,
-	  spawnLocation4, spawnLocation2, spawnLocation0, spawnLocation0,
-	   spawnLocation4, spawnLocation5, spawnLocation1, spawnLocation3,
-	spawnLocation4, spawnLocation6, spawnLocation5, spawnLocation4,
-	 spawnLocation3, spawnLocation2, spawnLocation1, spawnLocation3,
-	  spawnLocation4, spawnLocation2, spawnLocation0, spawnLocation0,
-	   spawnLocation4, spawnLocation5, spawnLocation1, spawnLocation3,
-	    spawnLocation0];
+	locationArray = [
+	spawnLocation0, 
+	spawnLocation1, 
+	spawnLocation2,
+	spawnLocation3, 
+	spawnLocation4,
+	spawnLocation5,
+	spawnLocation6,
+	spawnLocation4, 
+	spawnLocation2, 
+	spawnLocation0, 
+	spawnLocation0,
+	spawnLocation4, 
+	spawnLocation5, 
+	spawnLocation1, 
+	spawnLocation3,
+	spawnLocation4, 
+	spawnLocation6, 
+	spawnLocation5, 
+	spawnLocation4,
+	spawnLocation3
+	];
 }
 
 function declareVictory()
